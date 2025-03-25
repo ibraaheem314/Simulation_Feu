@@ -6,7 +6,7 @@ import os
 
 # ==== CONFIGURATION ====
 DATA_PATH = "Data/resultats_tests_comparaison.csv"
-IMAGE_DIR = "images"
+IMAGE_DIR = "Images"
 DATA_DIR = "Data"
 
 # Création des dossiers si besoin
