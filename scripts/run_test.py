@@ -2,6 +2,8 @@ import subprocess
 import pandas as pd
 import itertools
 import time
+import os
+os.makedirs("Data", exist_ok=True)
 
 # Définition des paramètres à tester
 longueur = [1, 5, 10]  # Différentes tailles de la grille en km
@@ -87,5 +89,5 @@ for test in test_cases:
 
 # Sauvegarde des résultats dans un fichier CSV
 df = pd.DataFrame(resultats)
-df.to_csv("resultats_tests_comparaison.csv", index=False)
+df.to_csv("Data/resultats_tests_comparaison.csv", index=False)
 print("\n Données de performance sauvegardées dans 'resultats_tests_comparaison.csv' !")
